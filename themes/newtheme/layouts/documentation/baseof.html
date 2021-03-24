@@ -9,7 +9,7 @@
     <main role="main" class="min-h-screen pb-7 sm:pb-0">
       <div class="h-screen flex overflow-hidden"  x-data="{ open: false }">
         <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
-        <div class="fixed inset-0 flex z-40 lg:hidden" role="dialog" aria-modal="true" x-show="false">
+        <div class="fixed inset-0 flex z-40 lg:hidden" role="dialog" aria-modal="true" x-show="open">
           <!--
               Off-canvas menu overlay, show/hide based on off-canvas menu state.
         
@@ -20,7 +20,7 @@
                 From: "opacity-100"
                 To: "opacity-0"
             -->
-          <div class="fixed inset-0 bg-gray-600 bg-opacity-75" aria-hidden="true"></div>
+          <div class="fixed inset-0 bg-gray-600 bg-opacity-75" aria-hidden="true" @click="open = false"></div>
           <!--
               Off-canvas menu, show/hide based on off-canvas menu state.
         
@@ -48,7 +48,7 @@
                   Close sidebar
                 </span>
                 <!-- Heroicon name: outline/x -->
-                <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"  @click="open = false">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
@@ -85,7 +85,7 @@
           <div class="lg:hidden">
             <div class="flex items-center justify-between bg-gray-50 border-b border-gray-200 px-4 py-1.5">
               <div>
-                <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="Workflow">
+                <img class="h-8 w-auto" src="/images/hugo-logo-wide.svg" alt="Gopher">
               </div>
               <div>
                 <button type="button" class="-mr-3 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-500 hover:text-gray-900">
@@ -93,7 +93,7 @@
                     Open sidebar
                   </span>
                   <!-- Heroicon name: outline/menu -->
-                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" @click="open = !open">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                   </svg>
                 </button>
