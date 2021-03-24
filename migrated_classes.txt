@@ -20,6 +20,7 @@ lg:py-0
 lg:py-3
 lg:shadow-lg
 lg:text-gray-500
+lg:text-gray-900
 m-0
 m-2
 mb-4
@@ -40,6 +41,7 @@ md:py-0
 md:py-3
 md:shadow-lg
 md:text-gray-500
+md:text-gray-900
 mt-0
 opacity-10
 p-0
@@ -65,4 +67,6 @@ sm:py-0
 sm:py-3
 sm:shadow-lg
 sm:text-gray-500
+sm:text-gray-900
 text-gray-500
+text-gray-900

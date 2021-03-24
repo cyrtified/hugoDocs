@@ -1,3 +1,4 @@
 {{ define "main" }}
-  SINGLE DOCS
+  {{ .Render "page" }}
+  {{ partial "related.html" . }}
 {{ end }}
