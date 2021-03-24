@@ -30,6 +30,11 @@ body {
     max-width: 90%;
 }
 
+/* Hide pre-initialized DOM elements. */
+[x-cloak] {
+    display: none;
+}
+
 /* Combine with classes in skins and skins-pseudo for 
  * many different transition possibilities. */
 .bg-animate,
