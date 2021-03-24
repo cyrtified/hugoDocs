@@ -41,6 +41,7 @@
   {{ block "scripts" . }}
     {{- partial "site-scripts.html" . -}}
   {{ end }}
+  {{ partialCached "jslibs/alpinejs/script-src.html" "-" }}
   {{ partial "site-manifest.html" . }}
   {{- partial "head-additions.html" . -}}
   {{- template "_internal/opengraph.html" . -}}

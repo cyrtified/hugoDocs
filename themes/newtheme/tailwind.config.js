@@ -142,7 +142,7 @@ module.exports = {
 			}
 		}
 	},
-	important: true, // See https://tailwindcss.com/docs/configuration#important
+	important: false, // See https://tailwindcss.com/docs/configuration#important
 	purge: {
 		enabled: process.env.HUGO_ENVIRONMENT === 'production',
 		content: [ './hugo_stats.json', './layouts/**/*.html' ],

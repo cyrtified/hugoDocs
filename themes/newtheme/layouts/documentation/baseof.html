@@ -7,9 +7,9 @@
     {{ end }}
     {{ block "header" . }}{{ end }}
     <main role="main" class="min-h-screen pb-7 sm:pb-0">
-      <div class="h-screen flex overflow-hidden">
+      <div class="h-screen flex overflow-hidden"  x-data="{ open: false }">
         <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
-        <div class="fixed inset-0 flex z-40 lg:hidden" role="dialog" aria-modal="true">
+        <div class="fixed inset-0 flex z-40 lg:hidden" role="dialog" aria-modal="true" x-show="false">
           <!--
               Off-canvas menu overlay, show/hide based on off-canvas menu state.
         
