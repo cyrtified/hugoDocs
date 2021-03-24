@@ -1,11 +1,11 @@
 <header class="flex-none w-full">
-  {{ if .Params.categories }}
-    {{ range .Params.categories }}
-      <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="text-sm font-extrabold mb-0 link text-gray-500 dim mr3">
-        {{ humanize  . | upper }}
-      </a>
-    {{ end }}
-  {{end}}
+  {{ $categories := .GetTerms "categories" }}
+  {{ range $categories }}
+    <a href="{{ .RelPermalink }}" class="text-sm font-extrabold mb-0 link text-gray-500 dim mr-3">
+      {{ .Title | upper }}
+    </a>
+  {{ end }}
+  
   <h1 class="leading-tight mb-3 my-0 pt-3 text-steel-900">
     {{- if eq .Section "functions" -}}
       {{ .LinkTitle }}

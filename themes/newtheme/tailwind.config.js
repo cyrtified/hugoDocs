@@ -16,6 +16,15 @@ module.exports = {
 			sans: [ 'Mulish', ...theme.fontFamily.sans ]
 		},
 		extend: {
+			typography: (theme) => ({
+				DEFAULT: {
+					css: {
+						maxWidth: '75ch',
+						'code::before': false,
+						'code::after': false
+					}
+				}
+			}),
 			// Generated on https://tailwind.ink/ based on the old primary color: #0594CB
 			colors: {
 				primarydark: colorPrimaryDark,

@@ -11,7 +11,7 @@
           Tags:
         </li>
         {{ range .}}
-          <li class="block lg:inline-block mr3">
+          <li class="block lg:inline-block mr-3">
             <a class="tag" href="/tags/{{ .|urlize }}">
               {{ . }}
             </a>
@@ -25,7 +25,7 @@
           </li>
         {{ end }}
         {{ if ne .RelPermalink $currentPageUrl }}
-          <li class="block lg:inline-block mb-2 mr3">
+          <li class="block lg:inline-block mb-2 mr-3">
             <a href="{{ .RelPermalink }}" class="link">
               {{ .LinkTitle }}
             </a>

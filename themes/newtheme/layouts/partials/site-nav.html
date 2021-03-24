@@ -17,7 +17,7 @@
       </svg>
     </button>
   </div>
-  <div class="navbar-menu lg:flex lg:flex-grow lg:items-center w-full lg:w-auto" x-show.transition="open" x-bind:class="{'block': open, 'hidden': !open}">
+  <div class="navbar-menu lg:flex lg:flex-grow lg:items-center w-full lg:w-auto" x-bind:class="{'block': open, 'hidden': !open}">
     <div class="lg:mr-auto">
       {{ range .Site.Menus.global }}
         {{/* TODO(bep) */}}

@@ -39,7 +39,7 @@
     content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
   
   {{ block "scripts" . }}
-    {{- partial "site-scripts.html" . -}}
+    {{/*- partial "site-scripts.html" . TODO1 -*/}}
   {{ end }}
   {{ partialCached "jslibs/alpinejs/script-src.html" "-" }}
   {{ partial "site-manifest.html" . }}

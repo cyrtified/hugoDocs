@@ -6,6 +6,7 @@ variants:
 
 # tachyons_class => tailwind_class
 replacements:
+  mr3: mr-3
   ph5: px-5
   ph0: py-0
   mb4: mb-4

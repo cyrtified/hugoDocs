@@ -11,6 +11,7 @@ lg:leading-normal
 lg:m-0
 lg:m-2
 lg:mb-4
+lg:mr-3
 lg:mt-0
 lg:opacity-10
 lg:p-0
@@ -32,6 +33,7 @@ md:leading-normal
 md:m-0
 md:m-2
 md:mb-4
+md:mr-3
 md:mt-0
 md:opacity-10
 md:p-0
@@ -42,6 +44,7 @@ md:py-3
 md:shadow-lg
 md:text-gray-500
 md:text-gray-900
+mr-3
 mt-0
 opacity-10
 p-0
@@ -58,6 +61,7 @@ sm:leading-normal
 sm:m-0
 sm:m-2
 sm:mb-4
+sm:mr-3
 sm:mt-0
 sm:opacity-10
 sm:p-0

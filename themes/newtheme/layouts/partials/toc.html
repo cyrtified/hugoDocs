@@ -4,10 +4,13 @@
     <p class="font-bold">
       What's on this Page
     </p>
-    {{ .TableOfContents }}
+    <div class="leading-relaxed tracking-tight mt-2">
+      {{ .TableOfContents }}
+    </div>
   {{ end }}
-  {{- partial "previous-next-links-in-section.html" . -}}
-  
+  <div class="mt-4">
+    {{- partial "previous-next-links-in-section.html" . -}}
+  </div>
   {{- if .Params.godocref -}}
     <a target="_blank" class="tooltip right godoc-link" data-tooltip="See the related Godocs for {{.Title }}" href="{{.Params.godocref}}" ></a>
   {{- end -}}
